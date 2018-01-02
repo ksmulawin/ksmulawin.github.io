@@ -13,12 +13,32 @@
 
 			<!-- Latest compiled JavaScript -->
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-			
+			<style>
+				img
+				{
+					width:50%;
+					margin:75px auto;
+					position:relative;
+					
+				}
+				
+				#loading {
+						-webkit-animation: rotation 5s infinite linear;
+				}
+
+				@-webkit-keyframes rotation {
+						from {
+								-webkit-transform: rotate(0deg);
+						}
+						to {
+								-webkit-transform: rotate(360deg);
+						}
+				}
+			</style>
 		</head>
 		<body>
 			<div class="container">
-			  <h1>My First Bootstrap Page</h1>
-			  <p>This is some text.</p>
+				<img src="public/img/logo_web.png" id="loading" class="img-circle img-responsive">
 			</div>
 		</body>
 	</html>
