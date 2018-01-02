@@ -1,0 +1,85 @@
+@font-face{
+	font-family: YouMurderer BB;
+	src : url(../fonts/youmurdererbb_reg.ttf);
+}
+@media print{
+	h1,h2,h3,h4,h5{
+		font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		letter-spacing: 0px !important;
+	}
+	.print-disabled,.function-holder{
+		display: none !important;
+	}
+	.print-enabled{
+		display: block !important;
+	}
+	.modal{
+		overflow: hidden !important;
+		font-size: 12px !important;
+	}
+	.modal-dialog{
+		margin: 0px 0px;
+	}
+	.modal-content
+	{
+		box-shadow: 0px;
+		border: 0px solid rgba(0, 0, 0, .2);
+	}
+	.for-print
+	{
+		width: 100%;
+	}
+	.agm-standard .table-report-summary tbody > tr > td,
+	.agm-standard .table-chart tbody > tr > td
+	{
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.agm-standard .form-inline .form-group 
+	{
+		margin-bottom: 15px;
+	}
+	.agm-standard .visible-xs-custom
+	{
+		display: inline-block;
+	}
+	
+	
+}
+@media (max-width: 768px)
+{
+	.agm-standard .table-responsive .table-default-standard thead > tr th
+	{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.agm-standard .table-responsive .table-responsive-standard thead > tr th:first-child,
+	.agm-standard .table-responsive .table-responsive-standard-first-child thead > tr th:first-child
+	{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.agm-standard .table-responsive .table-responsive-standard thead > tr th:last-child,
+	.agm-standard .table-responsive .table-responsive-standard-last-child thead > tr th:last-child
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.agm-standard .table-responsive > .table-bordered 
+	{
+	    border: 1px solid #ddd;
+	}
+	.agm-standard .list-group-inline > li:nth-child(even)
+	{
+		padding-right: 0px;
+	}
+	.agm-standard #mainModalXLg .modal-xlg
+	{
+		width: 99%;
+	}
+
+}
