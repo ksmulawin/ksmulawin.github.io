@@ -27,13 +27,13 @@
 						<li class="nav-item" data-item="about">About</li>
 						<li class="nav-item" data-item="skills">Skills</li>
 						<li class="nav-item" data-item="education">Education</li>
-						<li class="nav-item">Experience</li>
+						<li class="nav-item"  data-item="experience">Experience</li>
 						<li class="nav-item">Contact</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<section class="colored">
+		<section class="colored" id="home">
 			<div class="actions">
 				<button class="btn csv-btn"> <i class="fa fa-send"></i> HIRE ME</button>
 				<button class="btn csv-btn"> <i class="fa fa-download"></i> DOWNLOAD CSV</button>
@@ -51,9 +51,9 @@
 				</div>
 				<div class="container">
 					<h1 class="name wow fadeInDown" >KHIMP S. MULAWIN</h1>
-					<h2 class="title wow lightSpeedIn" data-wow-delay="1s">Full Stack Developer</h3>
+					<h2 class="title wow lightSpeedIn" data-wow-delay="0.5s">Full Stack Developer</h3>
 					<div class="welcome-notes">
-						<p class="text-center wow fadeIn" data-wow-delay="2s">
+						<p class="text-center wow fadeIn" data-wow-delay="1.5s">
 							"I'm not a great programmer ; 
 							I'm just a good programmer with great habbits."
 						</p>
@@ -61,7 +61,7 @@
 				</div>
 			</div>
 			<div class="contact-info">
-				<div class="container text-center">
+				<div class="container text-center wow pulse">
 					<ul class="list-inline">
 						<li class="list-inline-item"> <i class="fa fa-phone"></i> +63 9754830231 </li>
 						<li class="list-inline-item"> <i class="fa fa-envelope"></i> ksmulawin@gmail.com </li>
@@ -73,11 +73,11 @@
 				<div class="page-nav-wrapper text-center">
 					<div class="container">
 						<ul class="nav page-nav list-inline">
-							<li class="nav-item">About</li>
-							<li class="nav-item">Skills</li>
-							<li class="nav-item">Education</li>
-							<li class="nav-item">Experience</li>
-							<li class="nav-item">Contact</li>
+							<li class="nav-item" data-item="about">About</li>
+							<li class="nav-item" data-item="skills">Skills</li>
+							<li class="nav-item" data-item="education">Education</li>
+							<li class="nav-item" data-item="experience">Experience</li>
+							<li class="nav-item" data-item="contact">Contact</li>
 						</ul>
 					</div>
 				</div>
@@ -85,18 +85,18 @@
 		</section>
 		<section class="plain" id="about">
 			<div class="container">
-			<br/></br>
-			<br/></br>
 				<div class="row">
 					<div class="col-lg-6">
 						<h2>About</h2>
-						<p class="about-content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						<div class="col-lg-3">
+							<img src="images/img_parallax.jpg" class="img-responsive img-circle">
+						</div>
+						<div class="col-lg-9 about-content">
+							"-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Ut varius venenatis neque convallis egestas. Vestibulum at elit sem. Cras semper urna in posuere suscipit.
-							Sed vel neque sed massa commodo mattis. Duis quis viverra lectus. Sed non dictum orci, ac gravida mauris.
-							In sit amet nibh mauris. Suspendisse nibh libero,
-							convallis vel lacus vitae, molestie cursus ligula. Curabitur luctus venenatis lacus a luctus. Sed euismod risus erat, non sodales velit condimentum eu. 
-						</p>
+							Sed vel neque sed massa commodo mattis."
+						</div>
+						
 					</div>
 					<div class="col-lg-6">
 						<h2>Basic Information</h2>
@@ -117,13 +117,28 @@
 							<label>Single</label><br/>
 						</div>
 					</div>
+					<div class="clearfix"></div>
+					<div class="col-lg-12">
+						<h2>Hobbies and Interest</h2>
+						<div class="col-lg-4 hobbies text-center">
+							<p><i class="fa fa-terminal fa-5x"></i></p>
+							<label>CODEFIGHTS</label>
+						</div>
+						<div class="col-lg-4 hobbies text-center">
+							<p><i class="fa fa-tv fa-5x"></i></p>
+							<label>MOVIES , SERIES , ANIME</label>
+						</div>
+						<div class="col-lg-4 hobbies text-center">
+							<p><i class="fa fa-gamepad fa-5x"></i></p>
+							<label>MOBA</label>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="plain" id="skills">
 			<div class="container">
 				<div class="row">
-					<br/><br/>
 					<div class="col-lg-6">
 						<h2>PROFESSIONAL SKILLS</h2>
 						<p class="about-content  wow fadeInDown">
@@ -254,8 +269,6 @@
 		</section>
 		
 		<section class="tinted" id="education">
-			<br/></br>
-			<br/></br>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -275,7 +288,6 @@
 										</div>
 									</div>
 								</div>
-								<div class="line-top hidden-xs hidden-sm"></div>
 							</div>
 							<div class="col-xs-12 col-sm-4">
 								<div class="panel panel-works">
@@ -290,7 +302,6 @@
 										</div>
 									</div>
 								</div>
-								<div class="line-bottom hidden-xs hidden-sm"></div>
 							</div>
 							<div class="col-xs-12 col-sm-4">
 								<div class="panel panel-works">
@@ -312,6 +323,66 @@
 			</div>	
 		</section>
 		
+		<section class="plain" id="experience">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 position-experience">
+						<h2>Experience</h2>
+						<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="pull-left company">
+										Web Developer @ Aktus Global Management Inc.
+									</div>
+									<div class="pull-right duration">
+										April 2015 - Present
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							<div class="panel-body">
+									<div class="row">
+										<div class="col-md-12">
+											<ul class="timeline">
+												<li class="timeline-item">
+													<div class="timeline-badge"><i class="fa fa-user"></i></div>
+													<div class="timeline-panel">
+														<div class="timeline-heading">
+															<h4 class="timeline-title">Internal Team</h4>
+															<p><small class="text-muted"><i class="fa fa-calendar"></i> April 2015 - February 2017</small></p>
+														</div>
+														<div class="timeline-body">
+															<p>
+																I've started as part of internal team which is responsible for creating applications 
+																in our group of companies.
+																I created <u class="open-porfolio">20+ applications</u> from planning to deployment as a part of internal team.
+															</p>
+														</div>
+													</div>
+												</li>
+												<li class="timeline-item">
+													<div class="timeline-badge"><i class="fa fa-users"></i></div>
+													<div class="timeline-panel">
+														<div class="timeline-heading">
+															<h4 class="timeline-title">Commercial Team</h4>
+															<p><small class="text-muted"><i class="fa fa-calendar-o"></i> February 2017 - Present</small></p>
+														</div>
+														<div class="timeline-body">
+															<p>
+																Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , 
+																depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+																Mé faiz elementum girarzis, nisi eros gostis.
+															</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="container-fluid colored footer-main">
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-4 text-center">
@@ -332,5 +403,9 @@
 				© KSMULAWIN 2018
 			</div>
 		</footer>
+		
+		<div class="arrow-up">
+			<i class="fa fa-chevron-up"></i>
+		</div>
 	</body>
 </html>

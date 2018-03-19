@@ -79,7 +79,7 @@
 			for(var i = 0; i < count; i++){
 
 				start = $(element).find('ul');
-				var html = '<li class="skill-'+(i+1)+'""><p>'+settings.object[i]['headline']+' <span class="fa fa-info-circle skill-description" data-info="'+settings.object[i]['description']+'"></span></p><div class="bar"></div></li>';
+				var html = '<li class="skill-'+(i+1)+'""><p>'+settings.object[i]['headline']+' <span class="fa fa-info-circle skill-description" data-toggle="tooltip" data-placement="right" title="'+settings.object[i]['description']+'"></span></p><div class="bar"></div></li>';
 				html = $(html).appendTo(start).find('.bar');
 
 				var value = settings.object[i]['value'];
@@ -88,6 +88,7 @@
 				bar_loop(html,value,length);
 
 			}
+			  $('[data-toggle="tooltip"]').tooltip(); 
 
 		}
 
