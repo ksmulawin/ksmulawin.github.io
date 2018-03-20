@@ -296,7 +296,7 @@
 				color:#fff;
 				font-weight:700;
 			}
-			.csv-btn
+			.csv-btn,.btn-contact
 			{
 				margin-right: 10px;
 				background: #16a085;
@@ -319,7 +319,11 @@
 				font-size: 14px;
 			}
 			
-			
+			.csv-btn:hover,.btn-contact:hover
+			{
+				color:#fff;
+				background: #34495e;
+			}
 
 			.box-features{
 				height: 150px;
@@ -605,8 +609,8 @@
 			  float: right;
 			}
 			.timeline .timeline-item:nth-child(even) .timeline-panel {
-			  float: right;
-			  left: 16px;
+				float: right;
+				left: -15px;
 			}
 			.timeline .timeline-item:nth-child(even) .timeline-panel:before {
 			  border-left-width: 0;
