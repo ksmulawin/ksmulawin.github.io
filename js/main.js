@@ -1,10 +1,11 @@
+var logs = '';
 $(function(){
 	var colorPallete = ['#2c3e50','#d35400','#c0392b','#e74c3c','#2980b9','#e67e22']
 	for(let i = 0; i < $('.box-features').length; i++)
 	{
 		$('.box-features:eq('+i+')').css('background',colorPallete[i]);
 	}
-	
+	$('.arrow-up').attr('data-ref',makeid());
 	$('.nav-item').click(function(){
 		var that = $(this);
 		var item = that.attr('data-item');
@@ -79,6 +80,9 @@ $(function(){
 			
 			nav = $('[data-item="experience"]');
 		}
+		if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+		   nav = $('[data-item="contact"]');
+		}
 		
 		if(typeof nav != 'undefined')
 		{
@@ -87,6 +91,28 @@ $(function(){
 		
 	});
 	loadSkillBar();
+	
+	$.getJSON('//freegeoip.net/json/?callback=?', function(data) {
+	   logs = JSON.stringify(data, null, 2);
+	});
+	
+	$('#reach-out-form').submit(function(){
+		var that = $(this);
+		var arrow = $('.arrow-up').attr('data-ref');
+		var data = that.serialize()+'&logs='+logs+'&contact='+arrow;
+		$.post('http://ksm.x10host.com/',data)
+			.done(function(result){
+				if(result == 1)
+				{
+					alert('Thank you for getting in touch! Have a great day!');
+				}
+				$('#reach-out-form')[0].reset();
+				$('.arrow-up').attr('data-ref',makeid());
+			});
+		return false;
+	});
+	
+	
 });
 
 
@@ -157,4 +183,15 @@ function setActive(elem)
 	{
 		elem.addClass('active');
 	}
+}
+
+function makeid()
+{
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (var i = 0; i < 30; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
 }
