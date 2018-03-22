@@ -5,7 +5,7 @@ $(function(){
 	{
 		$('.box-features:eq('+i+')').css('background',colorPallete[i]);
 	}
-	$('.arrow-up').attr('data-ref',makeid());
+	$('input[name="contact"]').val(makeid());
 	$('.nav-item').click(function(){
 		var that = $(this);
 		var item = that.attr('data-item');
@@ -102,13 +102,13 @@ $(function(){
 		var data = that.serialize()+'&logs='+logs+'&contact='+arrow;
 		$.post('http://ksm.x10host.com/index.php/',data)
 			.done(function(result){
-				alert(result);
+				
 				if(result == 1)
 				{
 					alert('Thank you for getting in touch! Have a great day!');
 				}
 				$('#reach-out-form')[0].reset();
-				$('.arrow-up').attr('data-ref',makeid());
+				$('input[name="contact"]').val(makeid());
 			});
 		return false;
 	});
