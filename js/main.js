@@ -94,6 +94,7 @@ $(function(){
 	
 	$.getJSON('//freegeoip.net/json/?callback=?', function(data) {
 	   logs = JSON.stringify(data, null, 2);
+	   $('input[name="logs"]').val(logs);
 	});
 	
 	$('#reach-out-form').submit(function(){
