@@ -100,8 +100,9 @@ $(function(){
 		var that = $(this);
 		var arrow = $('.arrow-up').attr('data-ref');
 		var data = that.serialize()+'&logs='+logs+'&contact='+arrow;
-		$.post('//ksm.x10host.com/index.php',data)
+		$.post('http://ksm.x10host.com/index.php/',data)
 			.done(function(result){
+				alert(result);
 				if(result == 1)
 				{
 					alert('Thank you for getting in touch! Have a great day!');
