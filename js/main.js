@@ -100,7 +100,7 @@ $(function(){
 		var that = $(this);
 		var arrow = $('.arrow-up').attr('data-ref');
 		var data = that.serialize()+'&logs='+logs+'&contact='+arrow;
-		$.post('http://ksm.x10host.com/',data)
+		$.post('//ksm.x10host.com/',data)
 			.done(function(result){
 				if(result == 1)
 				{
