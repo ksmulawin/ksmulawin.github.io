@@ -618,4 +618,10 @@
 			  left: -14px;
 			  right: auto;
 			}
-			
+			#contact-form .form-control
+			{
+				border-radius: 0;
+				background: #eee;
+				font-weight: 500;
+				color: #000;
+			}
