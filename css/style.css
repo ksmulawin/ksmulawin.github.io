@@ -22,7 +22,6 @@
 				font-family: 'Roboto';
 				height: 100%;
 				font-weight:100;
-			
 			}
 			.banner-content,.bg
 			{
@@ -390,12 +389,15 @@
 				font-size:18px;
 				font-weight:400;
 			}
-			.profile-details label
+			.profile-details
 			{
 				margin-bottom: 5px;
 				font-weight:300;
 			}
-			
+			.basic-info p > label
+			{
+				min-width:100px;
+			}
 			.panel-works{
 				border: none;
 				transition: .3s;
