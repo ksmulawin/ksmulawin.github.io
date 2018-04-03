@@ -73,7 +73,7 @@
 			
 			
 			<div class="home-fixed">
-				<a class="btn btn-contact"> <i class="fa fa-arrow-left"></i> Back to home</a>
+				<a class="btn btn-contact" href="https://ksmulawin.github.io/"> <i class="fa fa-arrow-left"></i> Back to home</a>
 			</div>
 		</div>
 		<div class="progress-image">
