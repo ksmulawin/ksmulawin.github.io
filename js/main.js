@@ -133,19 +133,19 @@ var object = [
 				},
 				{
 					'headline':'JavaScript & jQuery',
-					'value':7,
+					'value':8,
 					'length':10,
 					'description': "Level : Competent"
 				},
 				{
 					'headline':'PHP',
-					'value':8,
+					'value':9,
 					'length':10,
 					'description': 'Level : Proficient'
 				},
 				{
 					'headline':'MySQL',
-					'value':7,
+					'value':8,
 					'length':10,
 					'description': 'Level : Competent'
 				},
