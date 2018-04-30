@@ -119,24 +119,7 @@ $(function(){
 
 
 var object = [
-				{
-					'headline':'HTML',
-					'value':8,
-					'length':10,
-					'description': "Level : Proficient"
-				},
-				{
-					'headline':'CSS',
-					'value':7,
-					'length':10,
-					'description': "Level : Competent"
-				},
-				{
-					'headline':'JavaScript & jQuery',
-					'value':8,
-					'length':10,
-					'description': "Level : Competent"
-				},
+	
 				{
 					'headline':'PHP',
 					'value':9,
@@ -149,6 +132,26 @@ var object = [
 					'length':10,
 					'description': 'Level : Competent'
 				},
+				{
+					'headline':'JavaScript & jQuery',
+					'value':8,
+					'length':10,
+					'description': "Level : Competent"
+				},
+				{
+					'headline':'HTML',
+					'value':8,
+					'length':10,
+					'description': "Level : Proficient"
+				},
+				{
+					'headline':'CSS',
+					'value':7,
+					'length':10,
+					'description': "Level : Competent"
+				},
+				
+				
 				{
 					'headline':'Node JS & Electron JS & Angular JS',
 					'value':2,
